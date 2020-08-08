@@ -3,3 +3,11 @@ guru:
     username: savi
     password: savipass
     url: saviurl
+
+---
+spring:
+  profiles: de
+
+guru:
+  jms:
+    username: savi**in$$$$german
