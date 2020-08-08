@@ -1,0 +1,5 @@
+guru:
+  jms:
+    username: savi
+    password: savipass
+    url: saviurl
