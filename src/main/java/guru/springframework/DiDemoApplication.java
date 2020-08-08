@@ -1,6 +1,7 @@
 package guru.springframework;
 
 import guru.springfarmework.beans.FakeDataSource;
+import guru.springfarmework.beans.FakeJMSBroker;
 import guru.springframework.controllers.ConstructorInjectedController;
 import guru.springframework.controllers.GetterInjectedController;
 import guru.springframework.controllers.MyController;
@@ -19,5 +20,8 @@ public class DiDemoApplication {
 
 		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUsername());
+
+		FakeJMSBroker fakeJMSBroker = ctx.getBean(FakeJMSBroker.class);
+		System.out.println(fakeJMSBroker.getUsername());
 	}
 }
